@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/Ranats/bigwalk-third-person-comfort",
+  "commit": "b4d470fb109d5668db92b8793feaddbc1f8521a3",
+  "files": [
+    "README.md",
+    "LICENSE.md",
+    "ThirdPersonMod.csproj",
+    "src/Plugin.cs",
+    "src/ThirdPersonComponent.cs",
+    "src/CameraCastPatch.cs"
+  ]
+}

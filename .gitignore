@@ -1,0 +1,6 @@
+/work/
+/outputs/*.exe
+*.bwtp-new
+*.part
+__pycache__/
+*.pyc

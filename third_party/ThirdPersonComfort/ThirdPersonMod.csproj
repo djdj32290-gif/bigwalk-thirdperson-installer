@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>BigWalkThirdPerson</AssemblyName>
+    <RootNamespace>BigWalkThirdPerson</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!-- Point to your game install: set BIGWALK_DIR or pass -p:GameDir="..." -->
+    <GameDir Condition="'$(GameDir)' == ''">$(BIGWALK_DIR)</GameDir>
+    <GameDir Condition="'$(GameDir)' == ''">F:\SteamLibrary\steamapps\common\Big Walk</GameDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="$(GameDir)\BepInEx\core\BepInEx.Core.dll" />
+    <Reference Include="$(GameDir)\BepInEx\core\BepInEx.Unity.IL2CPP.dll" />
+    <Reference Include="$(GameDir)\BepInEx\core\0Harmony.dll" />
+    <Reference Include="$(GameDir)\BepInEx\core\Il2CppInterop.Common.dll" />
+    <Reference Include="$(GameDir)\BepInEx\core\Il2CppInterop.Runtime.dll" />
+    <Reference Include="$(GameDir)\BepInEx\interop\Il2Cppmscorlib.dll" />
+    <Reference Include="$(GameDir)\BepInEx\interop\Il2CppSystem.dll" />
+    <Reference Include="$(GameDir)\BepInEx\interop\Il2CppSystem.Core.dll" />
+    <Reference Include="$(GameDir)\BepInEx\interop\UnityEngine.dll" />
+    <Reference Include="$(GameDir)\BepInEx\interop\UnityEngine.CoreModule.dll" />
+    <Reference Include="$(GameDir)\BepInEx\interop\UnityEngine.InputLegacyModule.dll" />
+    <Reference Include="$(GameDir)\BepInEx\interop\UnityEngine.PhysicsModule.dll" />
+    <Reference Include="$(GameDir)\BepInEx\interop\UnityEngine.IMGUIModule.dll" />
+    <Reference Include="$(GameDir)\BepInEx\interop\Assembly-CSharp.dll" />
+    <Reference Include="$(GameDir)\BepInEx\interop\Mirror.dll" />
+  </ItemGroup>
+
+</Project>
